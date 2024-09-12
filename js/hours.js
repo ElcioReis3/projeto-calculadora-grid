@@ -1,4 +1,5 @@
 const clock = document.getElementById("displauHours");
+let batery = document.getElementById("batery");
 
 function showClock() {
     let date = new Date;
@@ -8,7 +9,7 @@ function showClock() {
 
 
     clock.innerHTML = `${hours}:${minutes}`
-}
+};
 
 setInterval(() => {
     showClock()
@@ -16,4 +17,5 @@ setInterval(() => {
 
 function addZero(x) {
     return x < 10 ? "0" + x : x
-}
+};
+
